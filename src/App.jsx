@@ -1,13 +1,24 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+
+import Home from "./pages/Home"
+import Booking from "./pages/Booking"
+import Contact from "./pages/Contact"
+
 function App() {
 
   return (
 
-    <div>
+    <BrowserRouter>
 
-      <h1>Hexaspot Hotel</h1>
-      <p>Welcome to our hotel website.</p>
+      <Routes>
 
-    </div>
+        <Route path="/" element={<Home />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/contact" element={<Contact />} />
+
+      </Routes>
+
+    </BrowserRouter>
 
   )
 
