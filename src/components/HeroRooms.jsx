@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const rooms = [
@@ -9,6 +9,7 @@ const rooms = [
 
 export default function Home() {
     const navigate = useNavigate()
+    const [activeHex, setActiveHex] = useState(null)
 
     const handleBook = (roomKey) => {
         navigate(`/booking?room=${roomKey}`)
@@ -25,7 +26,13 @@ export default function Home() {
                     {rooms.map((room, index) => (
                         <div className={`carousel-item ${index === 0 ? 'active' : ''}`} key={room.key}>
                             <div className="hex-grid">
-                                <div className="hex hex-image">
+                                <div
+                                    className={`hex hex-image ${activeHex === room.key ? "square" : ""}`}
+                                    onTouchStart={(e) => {
+                                        e.preventDefault()
+                                        setActiveHex(room.key)
+                                    }}
+                                >
                                     <img src={room.img} alt={room.name} />
                                 </div>
                                 <div className="hex hex-book" onClick={() => handleBook(room.key)}>
