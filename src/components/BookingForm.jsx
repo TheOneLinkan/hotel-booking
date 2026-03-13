@@ -63,7 +63,7 @@ export default function Booking() {
                     required
                 />
 
-                <button type="submit" className="btn">
+                <button type="submit" className="hex-button">
                     Boka
                 </button>
             </form>

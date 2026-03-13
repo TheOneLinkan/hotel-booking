@@ -481,3 +481,26 @@ footer {
     border: none;
 
 }
+
+/* ==============================
+   Hexagon buttons for forms
+============================== */
+
+.hex-button {
+    width: clamp(100px, 35%, 120px);
+    max-width: 120px;
+    padding: 12px 0;
+    border-radius: 12px;
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.hex-button:hover {
+    background: #e86c00;
+    transform: scale(1.05);
+}
