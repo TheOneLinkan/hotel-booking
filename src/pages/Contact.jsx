@@ -8,7 +8,6 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        // Kan logga meddelandet i console om du vill
         console.log({ name, email, message })
         setSubmitted(true)
     }
