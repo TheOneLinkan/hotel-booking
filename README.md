@@ -1,16 +1,68 @@
-# React + Vite
+# Hexaspot Hotel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive hotel booking website built with React.
+The project includes a homepage, booking system, and contact form.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://hexaspot.netlify.app
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* React Router
+* Bootstrap 5
+* CSS (custom hexagon design)
+* LocalStorage
+* Vite
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Display hotel rooms in an interactive carousel
+* Book rooms via a form
+* Save bookings using localStorage
+* Contact form
+* Responsive design (mobile & desktop)
+* Touch support for mobile (hover fallback)
+
+## Project Structure
+
+src/
+
+* components/
+  
+  * BookingForm.jsx
+  * Carousel.jsx
+  * Footer.jsx
+  * HeroRooms.jsx
+  * Navbar.jsx
+  
+* pages/
+
+  * Home.jsx
+  * Booking.jsx
+  * Contact.jsx
+ 
+    
+##  Installation to run the project locally:
+
+1. Clone the repository:
+
+git clone https://github.com/TheOneLinkan/hotel-booking.git
+
+2. Install dependencies:
+
+npm install
+
+3. Run the project:
+
+npm run dev
+
+
+##  Deployment
+
+The project is deployed via Netlify and connected to GitHub for automatic updates.
+
+##  Author
+
+* Hexaspot Hotel Project
